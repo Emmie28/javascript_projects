@@ -1,0 +1,60 @@
+<html>
+    <head>
+        
+        <style>
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto auto auto auto auto;
+                gap: 10px;
+                background-color: #2196F3;
+                padding: 10px;
+                width: 500px;
+                height: 165px;
+            }
+
+            .grid-container > div {
+                background-color: rgba(255, 255, 255, 0.8);
+                text-align: 20px 0;
+                font-size: 30px;
+            }
+
+            .item1 {
+                grid-column: 1/5;
+            }
+
+            .item2 {
+                text-align: center;
+            }
+        </style>
+
+        <script type="text/javascript" src="./calculator.js">
+           
+        </script>
+    </head> 
+
+    <body>
+        <div class="grid-container">
+            <div class="item1" id='0' onclick=calc(0)></div>
+            <div class="item2" id='1' onclick=calc(1)>1</div>
+            <div class="item2" id='2' onclick=calc(2)>2</div>
+            <div class="item2" id='3' onclick=calc(3)>3</div>
+            <div class="item2" id='4' onclick=calc(4)>4</div>
+            <div class="item2" id='5' onclick=calc(5)>5</div>
+            <div class="item2" id='6' onclick=calc(6)>6</div>
+            <div class="item2" id='7' onclick=calc(7)>7</div>
+            <div class="item2" id='8' onclick=calc(8)>8</div>
+            <div class="item2" id='9' onclick=calc(9)>9</div>
+            <div class="item2" id='10' onclick=calc(10)>0</div>
+            <div class="item2" id='11' onclick=calc(11)>.</div>
+            <div class="item2" id='add' onclick="calc('add')">+</div>
+            <div class="item2" id='subt' onclick="calc('subt')">-</div>
+            <div class="item2" id='divide' onclick="calc('divide')">/</div>
+            <div class="item2" id='multiply' onclick="calc('multiply')">*</div>
+            <div class="item2" id='%' onclick="calc('%')">%</div>
+            <div class="item2" id="delete" onclick=del()>del</div>
+            <div class="item2" id='eq' onclick=cal()>=</div>
+
+        </div>
+        
+    </body>
+</html>

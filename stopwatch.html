@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <style>
+             .clock_container{
+                background-color: #967b31f6;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+                width: 500px;
+                height: 200px;
+
+            }
+            .clock-content{
+                display: block;
+                text-align: center;
+                
+            }
+            .clock-control{
+                display: grid;
+                grid-template-columns: auto auto auto auto auto auto;
+                gap: 10px;
+                
+                justify-content: center;
+            }
+
+            .clock-control > div {
+                background-color: rgba(255, 255, 255, 0.8);
+                text-align: 20px 0;
+                font-size: 25px;
+            }
+
+            button {
+                padding: 10px;
+                border-radius: 10px;
+            }
+
+            button:hover {
+                background-color:#2195f313;
+            }
+           
+        </style>
+        <script type="text/javascript" src="./stopwatch.js"></script>
+    </head>
+
+    <body>
+        <div class="clock_container">
+            <div class="clock-content">
+                <h3 >Stop Watch</h3>
+                <h4>Vanilla javascript Stop-watch</h4>
+                <h3 id="time">00:00</h3>
+                <div class="clock-control">
+                    
+                    <button  onclick=startTimer()>Start</button>
+                    <button  onclick=stopTimer()>Stop</button>
+                    <button  onclick=resetTimer()>Reset</button>
+                    
+                </div>
+
+            </div>
+           
+        </div>
+    </body>
+</html>
